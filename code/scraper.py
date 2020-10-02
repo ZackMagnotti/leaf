@@ -17,7 +17,7 @@ def is404(soup):
     ---------
     (bool) : True if page is 404, false otherwise
     '''
-    if '404' in soup.head.title.text:
+    if soup.find('h1').text == '404':
         return True
     return False
 
