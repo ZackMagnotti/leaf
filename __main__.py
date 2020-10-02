@@ -35,7 +35,8 @@ def recursive_generate_tree(links, function):
 
     def get_node(link, function):
         # printing a long space and then '\r' clears previous output
-        print(f'    fetching info from {link}' + ' '*20, end='\r')
+        whitespace = ' ' * (30 - len(link))
+        print(f'    fetching info from {link}' + whitespace, end='\r')
         url = util.sanitized_url(link) 
         return function(url, recursive_generate_tree)
 
