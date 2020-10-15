@@ -7,7 +7,7 @@ Should work in most anaconda environments.
 To run, navigate to this folder and run:
 
 ```
-python3 main.py
+python main.py
 ```
 
 
